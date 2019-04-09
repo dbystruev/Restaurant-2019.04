@@ -12,6 +12,12 @@
 		69A5B6CE225D0B6900E20230 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69A5B6CC225D0B6900E20230 /* Main.storyboard */; };
 		69A5B6D0225D0B6F00E20230 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69A5B6CF225D0B6F00E20230 /* Assets.xcassets */; };
 		69A5B6D3225D0B6F00E20230 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69A5B6D1225D0B6F00E20230 /* LaunchScreen.storyboard */; };
+		69A5B6E0225D0CD100E20230 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A5B6DF225D0CD000E20230 /* MenuItem.swift */; };
+		69A5B6E2225D0F9800E20230 /* MenuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A5B6E1225D0F9800E20230 /* MenuItems.swift */; };
+		69A5B6E4225D0FFC00E20230 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A5B6E3225D0FFC00E20230 /* Categories.swift */; };
+		69A5B6E6225D119C00E20230 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A5B6E5225D119C00E20230 /* Order.swift */; };
+		69A5B6E8225D128E00E20230 /* PreparationTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A5B6E7225D128E00E20230 /* PreparationTime.swift */; };
+		69A5B6EA225D138900E20230 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A5B6E9225D138900E20230 /* MenuController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		69A5B6CF225D0B6F00E20230 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69A5B6D2225D0B6F00E20230 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69A5B6D4225D0B6F00E20230 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69A5B6DF225D0CD000E20230 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		69A5B6E1225D0F9800E20230 /* MenuItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItems.swift; sourceTree = "<group>"; };
+		69A5B6E3225D0FFC00E20230 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		69A5B6E5225D119C00E20230 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		69A5B6E7225D128E00E20230 /* PreparationTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationTime.swift; sourceTree = "<group>"; };
+		69A5B6E9225D138900E20230 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,60 @@
 		69A5B6C7225D0B6900E20230 /* Restaurant 2019.04 */ = {
 			isa = PBXGroup;
 			children = (
-				69A5B6C8225D0B6900E20230 /* AppDelegate.swift */,
-				69A5B6CA225D0B6900E20230 /* ViewController.swift */,
-				69A5B6CC225D0B6900E20230 /* Main.storyboard */,
-				69A5B6CF225D0B6F00E20230 /* Assets.xcassets */,
-				69A5B6D1225D0B6F00E20230 /* LaunchScreen.storyboard */,
-				69A5B6D4225D0B6F00E20230 /* Info.plist */,
+				69A5B6DA225D0BCC00E20230 /* View Controllers */,
+				69A5B6DB225D0BDA00E20230 /* Views */,
+				69A5B6DC225D0BE400E20230 /* Model */,
+				69A5B6DD225D0BEA00E20230 /* Other Controllers */,
+				69A5B6DE225D0C1300E20230 /* Supporting Files */,
 			);
 			path = "Restaurant 2019.04";
+			sourceTree = "<group>";
+		};
+		69A5B6DA225D0BCC00E20230 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				69A5B6CA225D0B6900E20230 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		69A5B6DB225D0BDA00E20230 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				69A5B6CC225D0B6900E20230 /* Main.storyboard */,
+				69A5B6D1225D0B6F00E20230 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		69A5B6DC225D0BE400E20230 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				69A5B6E3225D0FFC00E20230 /* Categories.swift */,
+				69A5B6DF225D0CD000E20230 /* MenuItem.swift */,
+				69A5B6E1225D0F9800E20230 /* MenuItems.swift */,
+				69A5B6E5225D119C00E20230 /* Order.swift */,
+				69A5B6E7225D128E00E20230 /* PreparationTime.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		69A5B6DD225D0BEA00E20230 /* Other Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				69A5B6E9225D138900E20230 /* MenuController.swift */,
+			);
+			path = "Other Controllers";
+			sourceTree = "<group>";
+		};
+		69A5B6DE225D0C1300E20230 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69A5B6C8225D0B6900E20230 /* AppDelegate.swift */,
+				69A5B6CF225D0B6F00E20230 /* Assets.xcassets */,
+				69A5B6D4225D0B6F00E20230 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +193,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69A5B6EA225D138900E20230 /* MenuController.swift in Sources */,
+				69A5B6E6225D119C00E20230 /* Order.swift in Sources */,
+				69A5B6E0225D0CD100E20230 /* MenuItem.swift in Sources */,
+				69A5B6E2225D0F9800E20230 /* MenuItems.swift in Sources */,
+				69A5B6E4225D0FFC00E20230 /* Categories.swift in Sources */,
 				69A5B6CB225D0B6900E20230 /* ViewController.swift in Sources */,
 				69A5B6C9225D0B6900E20230 /* AppDelegate.swift in Sources */,
+				69A5B6E8225D128E00E20230 /* PreparationTime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8J39KF9DMS;
-				INFOPLIST_FILE = "Restaurant 2019.04/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Restaurant 2019.04/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8J39KF9DMS;
-				INFOPLIST_FILE = "Restaurant 2019.04/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Restaurant 2019.04/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
