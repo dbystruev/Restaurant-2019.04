@@ -9,8 +9,11 @@
 import UIKit
 
 class MenuTableViewController: UITableViewController {
+    let manager = CellManager()
+    
     var category: String!
     var menuItems = [MenuItem]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,21 +44,13 @@ extension MenuTableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MenuCellIdentifier")!
         let menuItem = menuItems[indexPath.row]
         
-        configure(cell, for: menuItem)
+        manager.configure(cell, for: menuItem)
         
         return cell
     }
     
-    func configure(_ cell: UITableViewCell, for menuItem: MenuItem) {
-        cell.textLabel?.text = menuItem.name
-        cell.detailTextLabel?.text = String(format: "$%.2f", menuItem.price)
-        
-        MenuController.shared.fetchImage(url: menuItem.imageURL) { image in
-            DispatchQueue.main.async {
-                cell.imageView?.image = image
-                cell.setNeedsLayout()
-            }
-        }
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
 }
 

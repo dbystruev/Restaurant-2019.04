@@ -11,6 +11,13 @@ import UIKit
 class MenuController {
     let baseURL = URL(string: "http://api.armenu.net:8090/")!
     
+    var order = Order() {
+        didSet {
+            NotificationCenter.default.post(name: MenuController.orderUpdatedNotification, object: nil)
+        }
+    }
+    
+    static let orderUpdatedNotification = Notification.Name("MenuController.orderUpdated")
     static var shared: MenuController = MenuController()
     
     private init() {}

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		693FBB882266453300688730 /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693FBB872266453300688730 /* OrderTableViewController.swift */; };
+		693FBB8A226647A400688730 /* CellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693FBB89226647A400688730 /* CellManager.swift */; };
+		693FBB8C226654E600688730 /* OrderConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693FBB8B226654E600688730 /* OrderConfirmationViewController.swift */; };
 		69A5B6C9225D0B6900E20230 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A5B6C8225D0B6900E20230 /* AppDelegate.swift */; };
 		69A5B6CB225D0B6900E20230 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A5B6CA225D0B6900E20230 /* ViewController.swift */; };
 		69A5B6CE225D0B6900E20230 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69A5B6CC225D0B6900E20230 /* Main.storyboard */; };
@@ -24,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		693FBB872266453300688730 /* OrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
+		693FBB89226647A400688730 /* CellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellManager.swift; sourceTree = "<group>"; };
+		693FBB8B226654E600688730 /* OrderConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationViewController.swift; sourceTree = "<group>"; };
 		69A5B6C5225D0B6900E20230 /* Restaurant 2019.04.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Restaurant 2019.04.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69A5B6C8225D0B6900E20230 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69A5B6CA225D0B6900E20230 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +93,8 @@
 				69CFB908226101E1006C9B08 /* CategoryTableViewController.swift */,
 				69CFB90B22610223006C9B08 /* MenuTableViewController.swift */,
 				69CFB90D22610273006C9B08 /* MenuItemDetailViewController.swift */,
+				693FBB872266453300688730 /* OrderTableViewController.swift */,
+				693FBB8B226654E600688730 /* OrderConfirmationViewController.swift */,
 				69A5B6CA225D0B6900E20230 /* ViewController.swift */,
 			);
 			path = "View Controllers";
@@ -116,6 +124,7 @@
 		69A5B6DD225D0BEA00E20230 /* Other Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				693FBB89226647A400688730 /* CellManager.swift */,
 				69A5B6E9225D138900E20230 /* MenuController.swift */,
 			);
 			path = "Other Controllers";
@@ -202,10 +211,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				693FBB8A226647A400688730 /* CellManager.swift in Sources */,
 				69A5B6EA225D138900E20230 /* MenuController.swift in Sources */,
 				69A5B6E6225D119C00E20230 /* Order.swift in Sources */,
 				69CFB90C22610223006C9B08 /* MenuTableViewController.swift in Sources */,
+				693FBB8C226654E600688730 /* OrderConfirmationViewController.swift in Sources */,
 				69A5B6E0225D0CD100E20230 /* MenuItem.swift in Sources */,
+				693FBB882266453300688730 /* OrderTableViewController.swift in Sources */,
 				69A5B6E2225D0F9800E20230 /* MenuItems.swift in Sources */,
 				69A5B6E4225D0FFC00E20230 /* Categories.swift in Sources */,
 				69CFB909226101E1006C9B08 /* CategoryTableViewController.swift in Sources */,
